@@ -52,19 +52,29 @@ INSERT INTO admissions VALUES
 (205, 5, '2026-04-19 10:40:00', '2026-04-20 16:00:00', 'Ward B');
 
 INSERT INTO events VALUES
--- Patient 1
 (1, 1, 'registration', '2026-04-19 08:30:00'),
 (2, 1, 'consultation', '2026-04-19 09:15:00'),
 (3, 1, 'diagnostics', '2026-04-19 09:45:00'),
 (4, 1, 'billing', '2026-04-19 10:15:00'),
-(5, 1, 'discharge', '2026-04-20 10:00:00'),
+(5, 1, 'discharge', '2026-04-19 10:45:00'),
 
--- Patient 2
 (6, 2, 'registration', '2026-04-19 09:00:00'),
 (7, 2, 'consultation', '2026-04-19 09:50:00'),
 (8, 2, 'diagnostics', '2026-04-19 10:30:00'),
-(9, 2, 'billing', '2026-04-19 11:00:00'),
-(10, 2, 'discharge', '2026-04-20 11:30:00');
+(9, 2, 'diagnostics', '2026-04-19 10:50:00'), -- more diagnostics (bottleneck)
+(10, 2, 'billing', '2026-04-19 11:10:00'),
+
+(11, 3, 'registration', '2026-04-19 10:00:00'),
+(12, 3, 'consultation', '2026-04-19 10:30:00'),
+(13, 3, 'consultation', '2026-04-19 11:00:00'), -- queue buildup
+(14, 3, 'diagnostics', '2026-04-19 11:30:00'),
+(15, 3, 'billing', '2026-04-19 12:00:00'),
+
+(16, 4, 'registration', '2026-04-19 11:00:00'),
+(17, 4, 'consultation', '2026-04-19 11:20:00'),
+(18, 4, 'diagnostics', '2026-04-19 11:40:00'),
+(19, 4, 'diagnostics', '2026-04-19 12:10:00'),
+(20, 4, 'diagnostics', '2026-04-19 12:30:00'); -- heavy load
 
 SELECT * FROM patients;
 SELECT * FROM events;
@@ -128,3 +138,6 @@ FLUSH PRIVILEGES;
 SELECT user, host FROM mysql.user;
 GRANT ALL PRIVILEGES ON caremetrics.* TO 'gopi'@'localhost';
 FLUSH PRIVILEGES;
+
+TRUNCATE TABLE events;
+TRUNCATE TABLE admissions;
