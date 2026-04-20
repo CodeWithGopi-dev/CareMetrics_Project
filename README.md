@@ -58,7 +58,9 @@ CareMetrics_Project/
 
 ![Peak Hour](dashboards/peak_hour.png)
 
----
+### Waiting Time Analysis
+
+![Waiting Time](dashboards/wait_time.png)
 
 ## 📌 Key Insights
 
