@@ -6,9 +6,9 @@ CareMetrics Project - Insights Report
 
 ---
 
-* Peak hospital activity occurs during mid-day hours (around 9 AM – 12 PM)
-* Patient flow is highest during consultation and diagnostics stages
-* Average waiting time is moderate but increases during peak hours
+* Peak hospital activity occurs between 9 AM – 12 PM, indicating mid-day congestion
+* Consultation and diagnostics stages handle the highest volume of patients
+* Average waiting time increases significantly during peak hours, affecting patient experience
 
 ---
 
@@ -16,9 +16,9 @@ CareMetrics Project - Insights Report
 
 ---
 
-* Diagnostics stage shows higher delays compared to other stages
-* Consultation queues build up during peak hours
-* Billing stage has consistent but smaller delays
+* Diagnostics stage has the highest delay among all stages, making it the primary bottleneck
+* Consultation queues increase during peak hours, causing cascading delays
+* Billing stage shows relatively stable and lower delays compared to other stages
 
 ---
 
@@ -26,9 +26,9 @@ CareMetrics Project - Insights Report
 
 ---
 
-* Event distribution shows uneven workload across stages
-* Highest number of events occur during specific hours of the day
-* Indicates need for better resource allocation during peak time
+* Patient events are unevenly distributed across time, with heavy clustering during peak hours
+* Staff workload is significantly higher during mid-day, indicating imbalance in resource allocation
+* Off-peak hours show underutilization of hospital resources
 
 ---
 
@@ -36,10 +36,10 @@ CareMetrics Project - Insights Report
 
 ---
 
-* Increase staffing during peak hours (morning to noon)
-* Optimize diagnostic processes to reduce delays
-* Improve queue management in consultation stage
-* Introduce better scheduling to balance patient load
+* Increase staffing during peak hours (9 AM – 12 PM) to handle higher patient load
+* Improve efficiency in diagnostics to reduce major bottlenecks
+* Implement better queue management during consultation stage
+* Redistribute appointments to balance workload across the day
 
 ---
 
@@ -47,6 +47,5 @@ CareMetrics Project - Insights Report
 
 ---
 
-The analysis helps identify inefficiencies in hospital workflow.
-By optimizing resource allocation and reducing bottlenecks,
-overall patient experience and operational efficiency can be improved.
+The analysis highlights key inefficiencies in hospital workflow, particularly during peak hours and diagnostic stages.
+Addressing these bottlenecks can significantly reduce patient waiting time and improve overall operational efficiency.

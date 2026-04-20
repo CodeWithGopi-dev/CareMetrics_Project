@@ -9,8 +9,8 @@ It identifies bottlenecks, delays, and workload patterns to improve operational 
 
 ## 🚀 Features
 
-* Patient flow analysis
-* Delay detection across hospital stages
+* Patient flow analysis across hospital stages
+* Delay detection (registration → consultation → diagnostics → billing)
 * Peak hour identification
 * Capacity and workload analysis
 * Data visualization dashboards
@@ -20,8 +20,8 @@ It identifies bottlenecks, delays, and workload patterns to improve operational 
 ## 🛠️ Tech Stack
 
 * **Python** (Pandas, Matplotlib)
-* **SQL**
-* **Excel Dataset**
+* **MySQL**
+* **CSV Dataset (`events.csv`)**
 
 ---
 
@@ -30,13 +30,44 @@ It identifies bottlenecks, delays, and workload patterns to improve operational 
 ```
 CareMetrics_Project/
 │
-├── data/              # Dataset
+├── data/              # Dataset (events.csv)
 ├── sql/               # SQL queries
 ├── src/               # Python scripts
 ├── dashboards/        # Generated graphs
 ├── reports/           # Insights report
 └── README.md
 ```
+
+---
+
+## ⚙️ How to Run
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```
+   pip install pandas matplotlib sqlalchemy mysql-connector-python
+   ```
+3. Ensure MySQL is running and update connection in code:
+
+   ```
+   create_engine("mysql+mysqlconnector://user:password@localhost/db")
+   ```
+4. Run analysis:
+
+   ```
+   python src/capacity_analysis.py
+   ```
+
+---
+
+## 📊 Key KPIs
+
+* Average Waiting Time
+* Consultation → Diagnostics Delay
+* Diagnostics → Billing Delay
+* Total Hospital Time (Length of Stay)
+* Peak Hour Load
 
 ---
 
@@ -62,12 +93,14 @@ CareMetrics_Project/
 
 ![Waiting Time](dashboards/wait_time.png)
 
+---
+
 ## 📌 Key Insights
 
-* Peak activity occurs during mid-day hours
-* Diagnostics stage shows major delays
-* Workload is uneven across time periods
-* Resource allocation needs optimization
+* Peak activity occurs between **9 AM – 12 PM**
+* Diagnostics stage is the **primary bottleneck**
+* Patient load is **unevenly distributed across time**
+* Peak hours require **additional staffing and resource allocation**
 
 ---
 
@@ -84,7 +117,7 @@ This project helps hospital administrators to:
 
 ## 📄 Insights Report
 
-Detailed findings are available in:
+Detailed findings available in:
 
 ```
 reports/insights.txt
@@ -94,8 +127,6 @@ reports/insights.txt
 
 ## 💡 Future Improvements
 
-* Add real-time dashboard
-* Include machine learning predictions
-* Build web-based interface
-
-
+* Real-time dashboard integration
+* Machine learning for congestion prediction
+* Web-based analytics interface
