@@ -2,14 +2,15 @@
 
 ## 📊 Hospital Operations and Patient Flow Analytics
 
-This project analyzes hospital patient flow using SQL and Python to identify bottlenecks, delays, and capacity utilization.
+CareMetrics is a healthcare analytics project designed to analyze hospital patient flow using SQL and Python.
+It identifies bottlenecks, delays, and workload patterns to improve operational efficiency and patient experience.
 
 ---
 
 ## 🚀 Features
 
 * Patient flow analysis
-* Delay detection across departments
+* Delay detection across hospital stages
 * Peak hour identification
 * Capacity and workload analysis
 * Data visualization dashboards
@@ -18,19 +19,24 @@ This project analyzes hospital patient flow using SQL and Python to identify bot
 
 ## 🛠️ Tech Stack
 
-* Python (Pandas, Matplotlib)
-* SQL
-* Excel dataset
+* **Python** (Pandas, Matplotlib)
+* **SQL**
+* **Excel Dataset**
 
 ---
 
 ## 📁 Project Structure
 
-* `data/` → Dataset
-* `sql/` → SQL queries
-* `src/` → Python analysis scripts
-* `dashboards/` → Generated graphs
-* `reports/` → Insights
+```
+CareMetrics_Project/
+│
+├── data/              # Dataset
+├── sql/               # SQL queries
+├── src/               # Python scripts
+├── dashboards/        # Generated graphs
+├── reports/           # Insights report
+└── README.md
+```
 
 ---
 
@@ -44,21 +50,50 @@ This project analyzes hospital patient flow using SQL and Python to identify bot
 
 ![Hourly Flow](dashboards/staff_demand.png)
 
+### Delays Analysis
+
+![Delays](dashboards/delays.png)
+
+### Peak Hour Detection
+
+![Peak Hour](dashboards/peak_hour.png)
+
 ---
 
 ## 📌 Key Insights
 
-* Identified peak hospital load hours
-* Analyzed patient flow delays
-* Evaluated system bottlenecks
-* Provided capacity optimization insights
+* Peak activity occurs during mid-day hours
+* Diagnostics stage shows major delays
+* Workload is uneven across time periods
+* Resource allocation needs optimization
 
 ---
 
 ## 🎯 Outcome
 
-This project helps hospital administrators:
+This project helps hospital administrators to:
 
-* Improve patient flow
-* Reduce waiting time
-* Optimize resource allocation
+* Reduce patient waiting time
+* Improve workflow efficiency
+* Optimize staffing and resource allocation
+* Identify operational bottlenecks
+
+---
+
+## 📄 Insights Report
+
+Detailed findings are available in:
+
+```
+reports/insights.txt
+```
+
+---
+
+## 💡 Future Improvements
+
+* Add real-time dashboard
+* Include machine learning predictions
+* Build web-based interface
+
+
