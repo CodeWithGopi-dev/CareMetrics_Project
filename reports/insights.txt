@@ -1,0 +1,52 @@
+CareMetrics Project - Insights Report
+
+---
+
+1. Key Findings
+
+---
+
+* Peak hospital activity occurs during mid-day hours (around 9 AM – 12 PM)
+* Patient flow is highest during consultation and diagnostics stages
+* Average waiting time is moderate but increases during peak hours
+
+---
+
+2. Bottleneck Analysis
+
+---
+
+* Diagnostics stage shows higher delays compared to other stages
+* Consultation queues build up during peak hours
+* Billing stage has consistent but smaller delays
+
+---
+
+3. Capacity Insights
+
+---
+
+* Event distribution shows uneven workload across stages
+* Highest number of events occur during specific hours of the day
+* Indicates need for better resource allocation during peak time
+
+---
+
+4. Recommendations
+
+---
+
+* Increase staffing during peak hours (morning to noon)
+* Optimize diagnostic processes to reduce delays
+* Improve queue management in consultation stage
+* Introduce better scheduling to balance patient load
+
+---
+
+5. Conclusion
+
+---
+
+The analysis helps identify inefficiencies in hospital workflow.
+By optimizing resource allocation and reducing bottlenecks,
+overall patient experience and operational efficiency can be improved.
